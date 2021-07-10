@@ -11,7 +11,7 @@ export default function Home({ results }) {
 
   const GetRouterPath = () => {
     let ActualPath = router.query.genre || null;
-    
+
     if(ActualPath === 'fetchTrending') {
       return '| Trending'
     } else if (ActualPath === 'fetchActionMovie') {
@@ -35,7 +35,7 @@ export default function Home({ results }) {
     } else if (ActualPath === 'fetchTV') {
       return '| Tv Movies'
     } else {
-      return ' '
+      return '| Trending'
     }
     
   }
